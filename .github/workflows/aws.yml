@@ -21,7 +21,6 @@ jobs:
       with:
         registry-type: 'private'
         mask-password: 'true' # 시크릿 값 마스킹
-    #   aws-region: ${{ env.AWS_REGION }} # aws-region 설정 제거
         
     - name: Build and push Docker image to Amazon ECR
       env:
